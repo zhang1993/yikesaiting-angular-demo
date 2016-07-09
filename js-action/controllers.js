@@ -16,3 +16,9 @@ actionApp.controller('View1Controller', ['$rootScope', '$scope', '$http', functi
         })
     };
 }]);
+
+actionApp.controller('View2Controller',['$rootScope','$scope',function($rootScope,$scope){
+    $scope.$on('$viewContentLoaded',function(){
+        alert('页面加载完成');
+    });
+}]);
